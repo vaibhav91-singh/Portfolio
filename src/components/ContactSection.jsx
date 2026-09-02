@@ -12,8 +12,14 @@ const ContactSection = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log('Contact form:', form);
     setSubmitted(true);
+
+    const subject = encodeURIComponent(`Portfolio Inquiry from ${form.name}`);
+    const body = encodeURIComponent(`Name: ${form.name}\nEmail: ${form.email}\n\nMessage:\n${form.message}`);
+    const mailtoUrl = `mailto:singhvaibhav849@gmail.com?subject=${subject}&body=${body}`;
+
+    // Trigger direct email composition to singhvaibhav849@gmail.com
+    window.location.href = mailtoUrl;
 
     // Success animation
     anime({
