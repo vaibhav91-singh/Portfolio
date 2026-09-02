@@ -1,0 +1,103 @@
+/* ============================================================
+   Footer Styles
+   ============================================================ */
+
+.footer {
+  position: relative;
+  border-top: 1px solid rgba(30, 41, 59, 0.5);
+  padding: 3rem var(--section-pad-x);
+}
+
+.footer__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.footer__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .footer__grid {
+    grid-template-columns: 1fr auto 1fr;
+  }
+}
+
+/* Brand */
+.footer__brand-name {
+  font-size: 1.1rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--cyan), var(--purple), var(--emerald));
+  background-size: 200% 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 4s ease infinite;
+  margin-bottom: 0.25rem;
+}
+
+.footer__brand-desc {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+/* Social */
+.footer__socials {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.footer__social-link {
+  padding: 0.625rem;
+  border-radius: 0.5rem;
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer__social-link:hover {
+  color: var(--text-primary);
+  background: rgba(30, 41, 59, 0.5);
+}
+
+/* Copyright */
+.footer__copyright {
+  text-align: right;
+  color: var(--text-dim);
+  font-size: 0.8rem;
+}
+
+@media (max-width: 767px) {
+  .footer__copyright {
+    text-align: center;
+  }
+  .footer__brand-name,
+  .footer__brand-desc {
+    text-align: center;
+  }
+}
+
+/* Bottom bar */
+.footer__bottom {
+  margin-top: 2rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(30, 41, 59, 0.3);
+  text-align: center;
+}
+
+.footer__bottom-text {
+  color: var(--text-dim);
+  font-size: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+.footer__heart {
+  color: #ef4444;
+}

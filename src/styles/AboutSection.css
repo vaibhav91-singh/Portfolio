@@ -1,0 +1,189 @@
+/* ============================================================
+   About Section Styles
+   ============================================================ */
+
+.about {
+  position: relative;
+  padding: var(--section-pad-y) var(--section-pad-x);
+}
+
+.about__inner {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+/* Header */
+.about__header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.about__label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--cyan);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.75rem;
+}
+
+.about__title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
+}
+
+/* Grid */
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+  align-items: start;
+}
+
+@media (min-width: 1024px) {
+  .about__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Text section */
+.about__text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about__paragraph {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+
+.about__paragraph strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.about__paragraph .highlight-emerald {
+  color: var(--emerald);
+  font-weight: 600;
+}
+
+/* Exploring tags */
+.about__exploring {
+  padding-top: 1rem;
+}
+
+.about__exploring-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.75rem;
+}
+
+.about__exploring-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.about__exploring-tag {
+  padding: 0.375rem 0.875rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  border-radius: 9999px;
+  background: rgba(30, 41, 59, 0.5);
+  border: 1px solid var(--border-default);
+  color: var(--text-secondary);
+  cursor: default;
+  transition: all 0.3s ease;
+}
+
+.about__exploring-tag:hover {
+  border-color: rgba(6, 182, 212, 0.3);
+  color: var(--cyan-light);
+  background: rgba(6, 182, 212, 0.06);
+}
+
+/* Stats */
+.about__stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.about__stat {
+  padding: 1.5rem;
+  border-radius: var(--card-radius);
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-default);
+  text-align: center;
+  transition: all 0.4s var(--ease-spring);
+}
+
+.about__stat:hover {
+  border-color: rgba(6, 182, 212, 0.25);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about__stat-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.about__stat-number {
+  font-size: 1.75rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  margin-bottom: 0.25rem;
+}
+
+.about__stat-label {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+/* Education card */
+.about__education {
+  margin-top: 1rem;
+  padding: 1.25rem;
+  border-radius: var(--card-radius);
+  background: var(--bg-card);
+  backdrop-filter: blur(16px);
+  border: 1px solid var(--border-default);
+}
+
+.about__education-inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.about__education-icon {
+  font-size: 1.5rem;
+}
+
+.about__education-degree {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about__education-university {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+
+.about__education-year {
+  font-size: 0.75rem;
+  color: var(--cyan);
+  margin-top: 0.25rem;
+}

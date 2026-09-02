@@ -1,0 +1,65 @@
+/* ============================================================
+   Skill Badge Styles
+   ============================================================ */
+
+.skill-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.65rem;
+  border-radius: 9999px;
+  font-size: 0.7rem;
+  font-weight: 500;
+  border: 1px solid;
+  transition: all 0.3s ease;
+  cursor: default;
+  animation: popIn 0.5s var(--ease-spring) both;
+}
+
+.skill-badge:hover {
+  transform: scale(1.08);
+}
+
+/* Variants */
+.skill-badge--cyan {
+  background: rgba(6, 182, 212, 0.08);
+  border-color: rgba(6, 182, 212, 0.2);
+  color: var(--cyan-light);
+}
+
+.skill-badge--cyan:hover {
+  background: rgba(6, 182, 212, 0.15);
+  border-color: rgba(6, 182, 212, 0.35);
+}
+
+.skill-badge--purple {
+  background: rgba(168, 85, 247, 0.08);
+  border-color: rgba(168, 85, 247, 0.2);
+  color: var(--purple-light);
+}
+
+.skill-badge--purple:hover {
+  background: rgba(168, 85, 247, 0.15);
+  border-color: rgba(168, 85, 247, 0.35);
+}
+
+.skill-badge--emerald {
+  background: rgba(16, 185, 129, 0.08);
+  border-color: rgba(16, 185, 129, 0.2);
+  color: var(--emerald-light);
+}
+
+.skill-badge--emerald:hover {
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.35);
+}
+
+.skill-badge--default {
+  background: rgba(30, 41, 59, 0.6);
+  border-color: var(--border-default);
+  color: var(--text-secondary);
+}
+
+.skill-badge--default:hover {
+  background: rgba(30, 41, 59, 0.8);
+  border-color: var(--border-hover);
+}
